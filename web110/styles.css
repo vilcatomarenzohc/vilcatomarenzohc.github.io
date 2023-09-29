@@ -1,10 +1,10 @@
-.h1 {
+h1 {
   color: green;
   font-family: courier;
   font-size: 35px;
 }
 
-.p {
+p {
   color: gray;
   font-family: verdana;
 }
