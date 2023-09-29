@@ -13,5 +13,14 @@ p {
   color: gray;
   font-family: verdana;
   margin: auto;
+  text-align: center;
+}
+
+lu {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
 }
   
