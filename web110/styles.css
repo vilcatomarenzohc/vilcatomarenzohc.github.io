@@ -25,4 +25,9 @@ ul {
 h2 {
   text-align: center;
 }
+
+iframe,
+img {
+  justify-items: center;
+}
   
