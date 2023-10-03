@@ -27,6 +27,7 @@ h2 {
 }
 
 .multimedia {
+  display: block;
   justify-items: center;
 }
   
