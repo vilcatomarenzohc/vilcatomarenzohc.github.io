@@ -19,28 +19,38 @@
     </p>
     <ul style="list-style-type:none">
       <li>SELECT * FROM Customers
-          WHERE Country='USA';</li>
+          WHERE Country='USA';
+      </li>
     </ul>
 
     <p>
       SQL COUNT function
     </p>
     <ul style="list-style-type:none">
-      <li>SELECT * FROM Customers;</li>
+      <li>SELECT COUNT(*)
+          FROM Products;
+      </li>
     </ul>
 
     <p>
       SQL INSERT INTO statement
     </p>
     <ul style="list-style-type:none">
-      <li>SELECT * FROM Customers;</li>
+      <li>
+        INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+        VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway');
+      </li>
     </ul>
 
     <p>
       SQL UPDATE statement
     </p>
     <ul style="list-style-type:none">
-      <li>SELECT * FROM Customers;</li>
+      <li>
+        UPDATE Customers
+        SET ContactName='Alfred Schmidt', City='Frankfurt'
+        WHERE CustomerID=1;
+      </li>
     </ul>
     
   </body>
