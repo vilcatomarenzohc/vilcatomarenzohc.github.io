@@ -33,8 +33,8 @@
       // Select font, alignment, draw text, and fill characters
       context.font = "36px sans-serif";
       context.textAlign="center";
-      context.strokeText("HTML5 Canvas", 160, 50);
-      context.fillText("HTML5 Canvas", 160, 50);
+      context.strokeText("WEB110 Rules!", 160, 50);
+      context.fillText("WEB110 Rules!", 160, 50);
     </script>
 
     <canvas id="canvas3" width="360" height="240">
@@ -47,7 +47,7 @@
 
       // Draw a blue triangle
       context.beginPath();
-      context.fillStyle = 'blue';
+      context.fillStyle = 'magenta';
       context.beginPath();
       context.moveTo(270, 105);
       context.lineTo(235, 175);
@@ -65,8 +65,8 @@
 
     // Create gradient
     var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
-    grd.addColorStop(0, "red");
-    grd.addColorStop(1, "white");
+    grd.addColorStop(0, "white");
+    grd.addColorStop(1, "yellow");
 
     // Fill with gradient
     ctx.fillStyle = grd;
