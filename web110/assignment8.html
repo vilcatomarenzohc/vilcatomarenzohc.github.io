@@ -36,6 +36,25 @@
       context.strokeText("HTML5 Canvas", 160, 50);
       context.fillText("HTML5 Canvas", 160, 50);
     </script>
+
+    <canvas id="canvas3" width="360" height="240">
+      This text is displayed if your browser does not support HTML5 Canvas.
+    </canvas>
+
+    <script>
+      var example = document.getElementById("canvas3");
+      var context = example.getContext("2d");
+
+      // Draw a blue triangle
+      context.beginPath();
+      context.fillStyle = 'blue';
+      context.beginPath();
+      context.moveTo(270, 105);
+      context.lineTo(235, 175);
+      context.lineTo(310, 175);
+      context.fill();
+      context.closePath();
+    </script>
     
   </body>
 </html>
