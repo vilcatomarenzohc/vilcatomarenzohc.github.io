@@ -14,6 +14,28 @@
     <script>
       document.getElementById("date").innerHTML = Date();
     </script>
+    <canvas id="canvas1" width="360" height="240">
+      This text is displayed if your browser does not support HTML5 Canvas.
+    </canvas>
+
+    <canvas id="canvas2" width="360" height="240">
+      This text is displayed if your browser does not support HTML5 Canvas.
+    </canvas>
+
+    <script>
+      var example = document.getElementById("canvas2");
+      var context = example.getContext("2d");
+
+      // Set stroke and fill to blue
+      context.strokeStyle = "blue";
+      context.fillStyle = "blue";
+
+      // Select font, alignment, draw text, and fill characters
+      context.font = "36px sans-serif";
+      context.textAlign="center";
+      context.strokeText("HTML5 Canvas", 160, 50);
+      context.fillText("HTML5 Canvas", 160, 50);
+    </script>
     
   </body>
 </html>
