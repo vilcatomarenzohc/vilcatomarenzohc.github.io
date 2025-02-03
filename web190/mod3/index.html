@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<!--
+Renzo Vilcatoma
+WEB 190
+Module 3 Lab
+03February2025
+-->
+
+<html lang="en">
+<head>	
+<title>My First HTML5 Web Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #wrapper {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border: thin solid black;
+    }
+
+    header {
+        text-align: left;
+        border: thin solid black;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+        
+    }
+
+    nav {
+        display: flex;
+        border: thin solid black;
+        background-color: orangered;
+    }
+
+    nav a {
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+    }
+
+    nav a:hover {
+        background-color: brown;
+        color: black;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .side {
+        flex: 30%;
+        background-color: beige;
+        padding: 25px;
+    }
+
+    .main {
+        flex: 70%;
+        padding: 25px;
+        background-color: white;
+        border: thin solid black;
+    }
+
+    #address {
+        padding: 15px;
+        border: thin solid black;
+    }
+
+    footer {
+        border: thin solid black;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 700px) {
+        .row {
+            flex-direction: column;
+        }
+        
+        nav {
+            flex-direction: column;
+        }
+
+        #wrapper {
+            width: 100%;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <header>
+            <h1>Mod 3 Lab: Flexbox - Child Element</h1>
+        </header>
+        <nav>
+            <a href="#">nav 1</a>
+            <a href="#">nav 2</a>
+            <a href="#">nav 3</a>
+            <a href="#">nav 4</a>
+            <a href="#">nav 5</a>
+        </nav>
+        <div class="row">
+            <div class="side">
+                <h2>Side Section</h2>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Netus viverra dapibus quis inceptos cursus feugiat cursus pellentesque.</p>
+                <p>Consequat maximus molestie mauris, facilisi suscipit diam tempus risus.</p>
+            </div>
+            <div class="main">
+                <h2>Main Section</h2>
+                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Augue efficitur sit hac viverra ut venenatis cubilia. Lectus per adipiscing fames class egestas.</p>
+                <p>Gravida iaculis mauris elit non; hendrerit euismod semper parturient. Torquent dis quam sed vel est mus parturient. Imperdiet netus nec consequat volutpat nunc.</p>
+                <p>Venenatis accumsan amet mi taciti duis. Eget maximus eu nunc duis vivamus augue. Vehicula erat conubia consequat vehicula nostra gravida mus. Ipsum aliquam vivamus pellentesque taciti augue taciti.</p>
+                <div id="address">
+                    Tedd Prater<br>
+                    123 Lala Land<br>
+                    Suite 100<br>
+                    Palatine, IL 60067<br>
+                    847-999-9999<br>
+                    <a href="mailto:tprater@harpercollege.edu">tprater@harpercollege.edu</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p class="fnav">
+            <a href="#">nav 1</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">nav 2</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">nav 3</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">nav 4</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">nav 5</a>
+        </p>
+
+        <p>Copyright&copy;2025, Renzo Vilcatoma</p>
+
+    </footer>
+
+</body>
+</html>
