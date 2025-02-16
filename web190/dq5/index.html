@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!--
+Renzo Vilcatoma
+WEB 190
+DQ5 - Two-Column Layout
+16February2025
+-->
+
+<html lang="en">
+<head>	
+<title>DQ5 - TwoColumn Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#wrapper {
+    width: 100%;
+    margin: auto;
+    border: thin solid #F0C73F;
+    border-radius: .5em;
+    background-color: #473CA7;
+}
+
+header {
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    text-align: center;
+    column-gap: 2em;
+    justify-content: space-around;
+    width: 90%;
+    margin-inline: auto;
+}
+
+main>div {
+    background-color: #DE3A5D;
+    margin: 10px;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: .5em;
+    
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin-inline: auto;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+@media only screen and (max-width: 680px) {
+    #wrapper {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 90%;
+    }
+}
+</style>
+
+</head>
+
+
+<body>
+
+    <div id="wrapper">
+        <header>
+            <h1>DQ5 - Two-Column Layout</h1>
+        </header>
+        <main>
+            <div class="column">
+                <h2>Music and Work</h2>
+                <p>I often listen to music while working on repetitive tasks like data entry or coding.<br>Current favorites include Pearl Jam, Coldplay, Daft Punk, Bad Bunny, and Sade.</p>
+            </div>
+            <div class="column">
+                <h2>Surfskating</h2>
+                <p>My cousin gifted me a surfskate board years ago - now I use it to make walks with my German Shepherd more fun and energy-demanding for him.</p>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright&copy; 2025 - Renzo Vilcatoma</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
