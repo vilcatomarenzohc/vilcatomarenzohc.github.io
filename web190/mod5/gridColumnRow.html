@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!--
+Renzo Vilcatoma
+WEB 190
+Module 5 Lab p2
+17February2025
+-->
+
+<html lang="en">
+<head>	
+<title>Module 5 - Part 2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    .grid-container1, .grid-container2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        background-color: mediumblue;
+        padding: 10px;
+    }
+
+    .grid-container1>div, .grid-container2>div {
+        background-color: lightblue;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        min-width: 2em;
+    }
+
+    .grid-container1 {
+        justify-content: space-evenly;
+    }
+
+    .grid-container2 {
+        align-content: center;
+        height: 40vh;
+    }
+
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>WEB190 - Module 5 Lab, part 2</h1>
+    </header>
+
+    <main>
+        <h2>Grid Area #1: justify-content: space-evenly</h2>
+        <div class="grid-container1">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+            <div class="item5">6</div>
+        </div>
+        <p>The justify-content - space-evenly property distributes all of the Grid Elements evenly while maintaining the order of the elements.</p>
+        
+        <hr>
+
+        <h2>Grid Area #2: align-content: center</h2>
+        <div class="grid-container2">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+            <div class="item5">6</div>
+        </div>
+        <p>The align-content - center property moves all the Grid Elements to the center of the Grid Container while maintaining the order of the Grid Elements.</p>
+    </main>
+
+
+</body>
+</html>
