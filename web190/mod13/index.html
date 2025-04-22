@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<!--
+Renzo Vilcatoma
+WEB 190
+Module 13
+21April2025
+-->
+
+<html lang="en">
+<head>	
+<title>WEB 190 - Module 13: W3.CSS Grid</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+  <div class="w3-container">
+    <div class="w3-container w3-teal w3-border w3-center">
+      <h1>WEB 190 - Module 13: W3.CSS Grid</h1>
+    </div>
+
+    <div class="w3-bar w3-red w3-border">
+      <a href="#" class="w3-bar-item w3-button">Home</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 3</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    <div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <div class="w3-row"> <!-- start of row 1 -->
+      <div class="w3-col l2 m3 s12 w3-green w3-center w3-border">
+        <h2>Left Column</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, temporibus vitae! Quidem laudantium doloribus a?</p>
+      </div>
+      <div class="w3-col l8 m6 s12 w3-center w3-border">
+        <h2>Center Column</h2>
+        <img src="IMG_0060.jpg" alt="sea" class="w3-image w3-right w3-margin">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure blanditiis ducimus nisi quisquam nesciunt cum exercitationem omnis incidunt ex quae harum voluptatem, at, accusantium alias, sequi mollitia dolorum. Excepturi.</p>
+      </div>
+      <div class="w3-col l2 m3 s12 w3-red w3-center w3-border">
+        <h2>Right Column</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, provident. Beatae, eum!</p>
+      </div>
+    </div>
+
+    <div class="w3-row"> <!-- start of row 1 -->
+      <div class="w3-col l6 m4 s12 w3-green w3-center w3-border">
+        <h2>Left Column</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, temporibus vitae! Quidem laudantium doloribus a?</p>
+      </div>
+      <div class="w3-col l6 m8 s12 w3-center w3-border">
+        <h2>Center Column</h2>
+        <table class="w3-table w3-striped">
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Gloves</td>
+            <td>$28</td>
+          </tr>
+          <tr>
+            <td>Jacket</td>
+            <td>$54</td>
+          </tr>
+          <tr>
+            <td>Scarf</td>
+            <td>$23</td>
+          </tr>
+          <tr>
+            <td>Cap</td>
+            <td>$32</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- footer row -->
+    <div class="w3-container w3-aqua w3-center w3-border w3-small">
+      <h5>WEB 190 - Module 13</h5>
+      <p>Copyright &copy;, 2025</p>
+    </div>
+  </div> <!-- end of the page container -->
+  
+
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+</html>
