@@ -749,7 +749,7 @@ button.home__scroll-name.button--flex {
 
 /*==================== PORTFOLIO ====================*/
 #portfolio {
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 .portfolio__container {
@@ -854,8 +854,8 @@ button.home__scroll-name.button--flex {
 }
 
 /*==================== TESTIMONIAL ====================*/
-#testimonial {
-    margin-top: 2rem;
+.testimonial {
+    margin-top: 6rem;
 }
 
 .testimonial__data,
