@@ -644,6 +644,10 @@ button.home__scroll-name.button--flex {
   color: var(--first-color);
 }
 
+.qualification section {
+    margin-bottom: 2rem;
+}
+
 /*==================== SERVICES ====================*/
 .services__container {
   gap: 1.5rem;
