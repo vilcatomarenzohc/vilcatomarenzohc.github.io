@@ -854,6 +854,10 @@ button.home__scroll-name.button--flex {
 }
 
 /*==================== TESTIMONIAL ====================*/
+#testimonial {
+    margin-top: 2rem;
+}
+
 .testimonial__data,
 .testimonial__header {
   display: flex;
