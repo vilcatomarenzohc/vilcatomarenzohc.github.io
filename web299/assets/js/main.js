@@ -207,7 +207,6 @@ themeButton.addEventListener('click', () => {
 // Show more text in About Me Section
 function showMore() {
   document.getElementById('details').style.display = 'block';
-  document.getElementById('inspiration').style.display = 'block';
   document.getElementById('outcome').style.display = 'block';
   document.getElementById('about-more').style.display = 'none';
    // Hide the button after clicking
