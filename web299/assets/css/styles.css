@@ -748,6 +748,10 @@ button.home__scroll-name.button--flex {
 }
 
 /*==================== PORTFOLIO ====================*/
+#portfolio {
+    margin-top: 2rem;
+}
+
 .portfolio__container {
   overflow: initial;
 }
