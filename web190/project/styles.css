@@ -383,6 +383,15 @@ footer {
 
 @media (max-width: 768px) {
   /* Mobile hamburger overlay */
+  .logo a {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+  }
+  
   .nav-links {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
