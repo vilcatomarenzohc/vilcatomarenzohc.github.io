@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!--
+Renzo Vilcatoma
+WEB190
+Final Project
+09May2025
+-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Chaska Peruvian Kitchen" />
+  <title>Contact | Chaska Peruvian Kitchen</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="content-page contact-page">
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">Chaska</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="hours.html">Hours &amp; Location</a></li>
+      </ul>
+      <button class="close-menu" aria-label="Close menu">✕</button>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <main>
+    <section class="contact-section">
+      <h1>Get in Touch</h1>
+      <div class="contact-grid">
+        <!-- Contact Info Column -->
+        <div class="contact-info">
+          <h2>Contact Info</h2>
+          <p><strong>Phone:</strong> <a href="tel:+18479256000">(847) 925-6000</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@chaskaperuvian.com">info@chaskaperuvian.com</a></p>
+          <p><strong>Address:</strong> 1200 W. Algonquin Rd, Palatine, IL 60067</p>
+        </div>
+        <!-- Contact Form Column -->
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="footer-logo">Chaska</a>
+        <p>Placeholder footer blurb about the restaurant.</p>
+      </div>
+      <div class="footer-col footer-nav">
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="hours.html">Hours &amp; Location</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social">
+          <a href="#" class="social-icon">Icon1</a>
+          <a href="#" class="social-icon">Icon2</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Chaska Peruvian Kitchen</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
